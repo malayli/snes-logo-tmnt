@@ -6,11 +6,6 @@
 extern char gameLogoSprite, gameLogoSprite_end;
 extern char logoPalette;
 
-void initForegroundPalette(u8 *source, u16 tilePaletteNumber) {
-	u16 palEntry = 128+(tilePaletteNumber*16);
-   	dmaCopyCGram(source, palEntry, 16*2);
-}
-
 int main(void) {
     // Initialize SNES 
 	consoleInit();
