@@ -11,7 +11,7 @@ It is built with PVSnesLib.
 ## How to build
 ### Visual Studio Code
 - Install Visual Studio Code
-- Open sneslogo.pnproj with Visual Studio Code
+- Open the root directory with Visual Studio Code
 - Build: Shit+Ctrl+B
 - Open sneslogo.sfc with a SNES Emulator
 
