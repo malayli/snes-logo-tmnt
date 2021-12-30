@@ -1,8 +1,8 @@
 # SNES Logo
 
 ## Description
-This is a demo for the Super Nintendo and Super Famicom.
-It shows how to load a logo bmp for the SNES console.
+This is a demo for the Super Nintendo and Super Famicom.\
+It shows how to load a logo bmp for the SNES console.\
 It is built with PVSnesLib.
 
 # Preview
