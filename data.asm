@@ -13,9 +13,9 @@ gameLogoSprite:
 .incbin "res/logo/logo.pic"
 gameLogoSprite_end:
 
-logoPalette:
+gameLogoPalette:
 .incbin "res/logo/logo.pal"
-logoPalette_end:
+gameLogoPalette_end:
 
 .ends
 

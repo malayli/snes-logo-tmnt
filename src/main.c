@@ -1,10 +1,9 @@
 #include <snes.h>
 
 #define PAL0 0
-#define PAL1 1
 
 extern char gameLogoSprite, gameLogoSprite_end;
-extern char logoPalette;
+extern char gameLogoPalette;
 
 int main(void) {
     // Initialize SNES 
@@ -13,7 +12,13 @@ int main(void) {
 	// Now Put in 256 color mode
 	setMode(BG_MODE3, 0);
 
-	oamInitGfxSet(&gameLogoSprite, (&gameLogoSprite_end-&gameLogoSprite), &logoPalette, 16*2, 0, 0x6000, OBJ_SIZE8_L32);
+	oamInitGfxSet(&gameLogoSprite, 
+		(&gameLogoSprite_end-&gameLogoSprite), 
+		&gameLogoPalette, 
+		16*2, 
+		PAL0, 
+		0x6000, 
+		OBJ_SIZE8_L32);
 
 	// Line 1 Part 1
 	oamSet(0, 0, 0, 3, 0, 0, 0, 0);
