@@ -15,12 +15,12 @@ all: bitmaps $(ROMNAME).sfc
 clean: cleanBuildRes cleanRom cleanGfx cleanAudio
 	
 #---------------------------------------------------------------------------------
-sprite.pic: res/sprite/sprite.bmp
+logo.pic: res/logo/logo.bmp
 	@echo convert bitmap ... $(notdir $@)
-	$(GFXCONV) -gs16 -pc16 -po16 -n $<
+	$(GFXCONV) -gs32 -pc16 -po16 -n $<
 
 pvsneslibfont.pic: res/font/pvsneslibfont.bmp
 	@echo convert font with no tile reduction ... $(notdir $@)
 	$(GFXCONV) -n -gs8 -po2 -pc16 -pe1 -mR! -m! -p! $<
 
-bitmaps : pvsneslibfont.pic sprite.pic
+bitmaps : pvsneslibfont.pic logo.pic

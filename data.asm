@@ -10,11 +10,11 @@ snesfont_end:
 .section ".rodata2" superfree
 
 gameLogoSprite:
-.incbin "res/sprite/sprite.pic"
+.incbin "res/logo/logo.pic"
 gameLogoSprite_end:
 
 logoPalette:
-.incbin "res/sprite/sprite.pal"
+.incbin "res/logo/logo.pal"
 logoPalette_end:
 
 .ends
