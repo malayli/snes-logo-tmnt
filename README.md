@@ -8,6 +8,22 @@ It is built with PVSnesLib.
 ## Preview
 ![preview](preview.png)
 
+## How to build
+### Visual Studio Code
+- Install Visual Studio Code
+- Open sneslogo.pnproj with Visual Studio Code
+- Build: Shit+Ctrl+B
+- Open sneslogo.sfc with a SNES Emulator
+
+### Programmer's Notepad
+- Install Programmer's Notepad: https://github.com/alekmaul/pvsneslib/wiki/PVSneslib-and-Programmer-Notepad
+- Open sneslogo.pnproj with Programmer's Notepad
+- Click on Tools>make in the top menu
+- Open sneslogo.sfc with a SNES Emulator
+
+## PVSnesLib Documentation
+http://www.portabledev.com/pvsneslib/doc/
+
 ## smconv
 Options are:
 
